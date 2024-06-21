@@ -25,13 +25,18 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
     image: string;
     title: string;
     description: string;
+    link: string;
   } | null>(null); // État pour l'élément du popup
 
   // Gestion du clic sur un élément
   const handleItemClick = (link: string) => {
+    console.log('handleItemClick link:', link); // Debugging log
     const item = popupItems.find((popupItem) => popupItem.link === link);
     if (item) {
+      console.log('Popup item found:', item); // Debugging log
       setPopupItem(item);
+    } else {
+      console.log('No matching popup item found'); // Debugging log
     }
   };
 
@@ -80,6 +85,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
           image={popupItem.image}
           title={popupItem.title}
           description={popupItem.description}
+          link={popupItem.link}
           onClose={closePopup}
         />
       )}

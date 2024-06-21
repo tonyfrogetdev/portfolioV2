@@ -1,12 +1,25 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerationEffect";
 import Button from "./ui/Button";
 import Image from "next/image";
+import Modal from "./ui/Modal";
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
-    <div className="pb-10 lg:pb-0 pt-20 ">
+    <div className="pb-10 lg:pb-0 pt-20">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -43,9 +56,11 @@ const Hero = () => {
             Développeur Web FullStack | Chef de projet CyberSécurité & Cloud
           </p>
 
-          <Button />
+          <Button onClick={handleOpenModal} />
         </div>
       </div>
+
+      <Modal showModal={showModal} handleClose={handleCloseModal} />
     </div>
   );
 };

@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface PopupProps {
   title: string;
   description: string;
   image: string;
+  link: string; // Ajout du lien dans les props
   onClose: () => void;
 }
 
@@ -12,6 +14,7 @@ const Popup: React.FC<PopupProps> = ({
   title,
   description,
   image,
+  link,
   onClose,
 }) => {
   return (
@@ -22,14 +25,23 @@ const Popup: React.FC<PopupProps> = ({
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
       >
-        <img src={image} alt={title} className="mb-4 w-full h-auto rounded" />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <div className="relative w-full h-64 mb-4">
+            <Image
+              alt="image popup"
+              src={image}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </a>
         <h2 className="text-xl font-bold mb-4">{title}</h2>
         <p className="mb-4">{description}</p>
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-green-300 text-white px-4 py-2 rounded font-bold"
           onClick={onClose}
         >
-          Close
+          Fermer la fenêtre
         </button>
       </motion.div>
     </div>
