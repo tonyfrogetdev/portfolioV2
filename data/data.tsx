@@ -22,12 +22,12 @@ export const items = [
   {
     title: "DevOPS",
     description: "AWS - Docker - TerraForm",
-
+    link: "https://example.com/devops" // Ajout d'un lien fictif
   },
   {
-    title: "Chef de projet ",
+    title: "Chef de projet",
     description: "CyberSécurité & Cloud",
-    
+    link: "https://example.com/chef-de-projet" // Ajout d'un lien fictif
   },
 ];
 
@@ -56,8 +56,6 @@ export const popupItems = [
     link: "https://www.youtube.com/watch?v=CsOyeztonG8",
     image: "/Contenu.png",
   },
-
-
 ];
 
 export const typewordseffect = [
