@@ -12,7 +12,7 @@ export const items = [
   {
     title: "NextJs - TailwindCss",
     description: "Application Web Complète",
-    link: "https://www.madagascode.com/",
+    link: "https://www.linkedin.com/in/tonyfrogetdev/",
   },
   {
     title: "Création de contenu",
@@ -20,13 +20,13 @@ export const items = [
     link: "https://www.youtube.com/watch?v=CsOyeztonG8",
   },
   {
-    title: "DevOPS",
-    description: "AWS - Docker - TerraForm",
-    link: "https://example.com/devops" // Ajout d'un lien fictif
+    title: "Acquisition de clients",
+    description: "Prospection, suivre un lead, convaincre un client",
+    link: "https://www.madagascode.com/" // Ajout d'un lien fictif
   },
   {
     title: "Chef de projet",
-    description: "CyberSécurité & Cloud",
+    description: "CyberSécurité & Cloud | AWS - Docker - TerraForm",
     link: "https://example.com/chef-de-projet" // Ajout d'un lien fictif
   },
 ];
@@ -47,7 +47,7 @@ export const popupItems = [
   {
     title: "NextJs - TailwindCss",
     description: "EN CONSTRUCTION - Mes compétences en NextJs me permettent de créer une application de HomeService pour Madagascar, où VitaTsara pourra mettre en relation les clients et prestataires facilement comme wecasa mais avec les réalités de Madagascar",
-    link: "https://www.madagascode.com/",
+    link: "https://www.linkedin.com/in/tonyfrogetdev/",
     image: "/VitaTsara.PNG",
   },
   {
@@ -55,6 +55,12 @@ export const popupItems = [
     description: "Ma passion pour la création de contenu se manifeste à travers l'utilisation de plateformes comme Canva et YouTube. Grâce à Canva, je réalise des designs visuellement attrayants pour diverses applications, allant des publications sur les réseaux sociaux aux présentations professionnelles. En parallèle, ma chaîne YouTube me permet de partager mon quotidien dans l'apprentissage du développement Web, j'ai bien progressé depuis mon premier challenge",
     link: "https://www.youtube.com/watch?v=CsOyeztonG8",
     image: "/Contenu.PNG",
+  },
+  {
+    title: "Acquisition de clients",
+    description: "Mes compétences en prospection et gestion de leads me permettent d'attirer, suivre et convaincre des clients potentiels. Grâce à des stratégies de marketing efficaces et une communication persuasive, je peux aider à développer votre clientèle et à augmenter vos ventes.",
+    link: "https://www.madagascode.com/", 
+    image: "/temoignage.png", 
   },
 ];
 
